@@ -71,6 +71,8 @@ public class LevelManager {
             game.getPlaying().getPlayer().loadLvlData(newLevel.getLvldata());
             game.getPlaying().setMaxLevelOffset(newLevel.getMaxLvlOffset());
             game.getPlaying().getObjManager().addBaskets(newLevel);
+            game.getPlaying().stopStopwatch();
+
 
     }
 

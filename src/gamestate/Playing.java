@@ -29,6 +29,7 @@ public class Playing extends State implements Statemethods {
 
 
     public Playing(Game game) {
+
         super(game);
         initClasses();
         calculateLvlOffset();
@@ -87,6 +88,7 @@ public class Playing extends State implements Statemethods {
         if (gameOver) {
             resetall();
             manager.reset();
+            game.getPlaying().stopStopwatch();
         }
     }
 
@@ -218,7 +220,7 @@ public class Playing extends State implements Statemethods {
         this.gameOver = gameOver;
     }
     public void stopStopwatch() {
-        stopwatchRunning = false;
+        startTime=System.currentTimeMillis();
     }
     private String formatTime(long millis) {
         long secondsTotal = millis / 1000;
