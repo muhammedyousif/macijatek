@@ -44,5 +44,3 @@ Locate the `Main.java` file and run it to start the game.
 ## Authors
 
 - Yousif Muhammed
-
-…]()
