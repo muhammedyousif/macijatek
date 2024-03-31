@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="9.0" transformSequenceNumber="3">
+  <directoryPresets config="/Users/yousifmuhammed/Programs/java/macijatek" />
+  <application name="Yogi Bear" distributionSourceDir="/Users/yousifmuhammed/Programs/java/macijatek/out/artifacts/macijatek_jar" />
+  <executable name="Yogi Bear" executableMode="gui" />
+  <java mainClass="Main.java" minVersion="15">
+    <classPath>
+      <scanDirectory location="../../../src" failOnError="false" />
+    </classPath>
+  </java>
+</exe4j>
