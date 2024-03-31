@@ -15,7 +15,7 @@ import static utilz.HelpMethods.*;
 public class YogiBear extends Entity {
 
     private int HEALTH;
-    private int aniTick, aniIndex, aniSpeed=100 ;
+    private int aniTick, aniIndex, aniSpeed=99 ;
 
     private BufferedImage[][] animations;
     private int playeraction = IDLE;
