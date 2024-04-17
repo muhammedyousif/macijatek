@@ -137,6 +137,9 @@ public class YogiBear extends Entity {
 
     private void updateAnimation() {
         aniTick++;
+        if (playeraction == IDLE) {
+            aniIndex = 0;
+        }
         if (aniTick>=aniSpeed){
             aniTick=0;
             aniIndex++;

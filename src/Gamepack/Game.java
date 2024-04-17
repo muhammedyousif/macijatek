@@ -101,13 +101,6 @@ public class Game implements Runnable {
                 deltaF--;
                 frames++;
             }
-/*
-            if(now-lastframe>=timeframe){
-                gamePanel.repaint();
-                lastframe=now;
-                frames++;
-            }
-*/
             if (System.currentTimeMillis() - lastCheck >= 1000) {
                 lastCheck = System.currentTimeMillis();
                 System.out.println("FPS: " +frames+"| UPS: "+updates+"|x: "+playing.getPlayer().getHitbox().x+" y: "+playing.getPlayer().getHitbox().y);
@@ -115,10 +108,6 @@ public class Game implements Runnable {
                 updates=0;
             }
         }
-
-
-
-
     }
 
     public void WindowFocusLost() {
